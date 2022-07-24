@@ -2,7 +2,7 @@ const inputValidation = document.getElementById("validation-input");
 const totalMax = inputValidation.getAttribute("data-length");
 
 inputValidation.oninput = () => {
-  if (inputValidation.valua === [data - length]) {
+  if (inputValidation.value.length === totalMax) {
     inputValidation.classList.remove("invalid");
     inputValidation.classList.add("valid");
   } else {
