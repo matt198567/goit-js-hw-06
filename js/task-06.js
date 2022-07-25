@@ -1,5 +1,5 @@
 const inputValidation = document.getElementById("validation-input");
-const totalMax = inputValidation.getAttribute("data-length");
+const totalMax = Number(inputValidation.getAttribute("data-length"));
 
 inputValidation.oninput = () => {
   if (inputValidation.value.length === totalMax) {

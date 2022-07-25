@@ -1,9 +1,9 @@
 const totalCategories = document.querySelectorAll(".item");
 console.log(`Number of categories: ${totalCategories.length}`);
-const categoriesEl = [...totalCategories]
-  .map(
-    (categories) => `Category: ${categories.children[0].textContent} 
+// const categoriesEl = [...totalCategories]
+totalCategories.forEach(
+  (categories) => `Category: ${categories.children[0].textContent} 
   Elements: ${categories.children[1].children.length}`
-  )
-  .join("\n");
-console.log(categoriesEl);
+);
+// .join("\n");
+console.log(totalCategories);
